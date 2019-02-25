@@ -166,7 +166,7 @@ target_include_directories(
 
 target_link_libraries(fizz
   PUBLIC
-    ${FOLLY_LIBRARIES}
+    Folly::folly_pic
     ${Boost_LIBRARIES}
     ${OPENSSL_LIBRARIES}
     # Don't use the sodium target here because it will break clients that
